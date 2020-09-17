@@ -205,7 +205,8 @@ class Network(object):
 
             print('Models successfully loaded')
             return net
-        except:
+        except Exception as e:
+            print(e)
             print('Unable to load model')
             return None
         
